@@ -9,7 +9,6 @@ export default defineConfig({
   external: [
     "react",
     "react-dom",
-    "next-themes",
     // Externalize all dependencies - they'll be resolved at runtime
     /^@radix-ui\//,
     /^@hookform\//,
