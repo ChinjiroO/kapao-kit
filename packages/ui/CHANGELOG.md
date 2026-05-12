@@ -1,5 +1,11 @@
 # @kapao-kit/ui
 
+## 0.2.0
+
+### Minor Changes
+
+- 44c0a67: feat(ui): enhance all components
+
 ## 0.1.0
 
 ### Minor Changes
