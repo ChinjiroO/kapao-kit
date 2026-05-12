@@ -63,9 +63,7 @@ export default function Home() {
   return (
     <main className="container mx-auto max-w-4xl px-4 py-12 space-y-12">
       <div className="space-y-2">
-        <h1 className="text-4xl font-bold tracking-tight">
-          @kapao-kit/ui
-        </h1>
+        <h1 className="text-4xl font-bold tracking-tight">@kapao-kit/ui</h1>
         <p className="text-lg text-[hsl(var(--muted-foreground))]">
           A customizable UI component library built on shadcn/ui, Radix UI, and
           Tailwind CSS v4.
@@ -157,9 +155,7 @@ export default function Home() {
           <Card>
             <CardHeader>
               <CardTitle>Card Title</CardTitle>
-              <CardDescription>
-                Card description goes here.
-              </CardDescription>
+              <CardDescription>Card description goes here.</CardDescription>
             </CardHeader>
             <CardContent>
               <p>Card content with useful information.</p>
@@ -171,9 +167,7 @@ export default function Home() {
           <Card>
             <CardHeader>
               <CardTitle>Notifications</CardTitle>
-              <CardDescription>
-                You have 3 unread messages.
-              </CardDescription>
+              <CardDescription>You have 3 unread messages.</CardDescription>
             </CardHeader>
             <CardContent className="space-y-2">
               <div className="flex items-center space-x-4">
@@ -237,22 +231,68 @@ export default function Home() {
 
       {/* Tabs */}
       <Section title="Tabs">
-        <Tabs defaultValue="account" className="max-w-lg">
+        <Tabs defaultValue="overview" className="w-100">
           <TabsList>
-            <TabsTrigger value="account">Account</TabsTrigger>
-            <TabsTrigger value="password">Password</TabsTrigger>
+            <TabsTrigger value="overview">Overview</TabsTrigger>
+            <TabsTrigger value="analytics">Analytics</TabsTrigger>
+            <TabsTrigger value="reports">Reports</TabsTrigger>
+            <TabsTrigger value="settings">Settings</TabsTrigger>
           </TabsList>
-          <TabsContent value="account" className="space-y-2">
-            <p className="text-sm text-[hsl(var(--muted-foreground))]">
-              Make changes to your account here.
-            </p>
-            <Input placeholder="Name" />
+          <TabsContent value="overview">
+            <Card>
+              <CardHeader>
+                <CardTitle>Overview</CardTitle>
+                <CardDescription>
+                  View your key metrics and recent project activity. Track
+                  progress across all your active projects.
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="text-sm text-muted-foreground">
+                You have 12 active projects and 3 pending tasks.
+              </CardContent>
+            </Card>
           </TabsContent>
-          <TabsContent value="password" className="space-y-2">
-            <p className="text-sm text-[hsl(var(--muted-foreground))]">
-              Change your password here.
-            </p>
-            <Input type="password" placeholder="New password" />
+          <TabsContent value="analytics">
+            <Card>
+              <CardHeader>
+                <CardTitle>Analytics</CardTitle>
+                <CardDescription>
+                  Track performance and user engagement metrics. Monitor trends
+                  and identify growth opportunities.
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="text-sm text-muted-foreground">
+                Page views are up 25% compared to last month.
+              </CardContent>
+            </Card>
+          </TabsContent>
+          <TabsContent value="reports">
+            <Card>
+              <CardHeader>
+                <CardTitle>Reports</CardTitle>
+                <CardDescription>
+                  Generate and download your detailed reports. Export data in
+                  multiple formats for analysis.
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="text-sm text-muted-foreground">
+                You have 5 reports ready and available to export.
+              </CardContent>
+            </Card>
+          </TabsContent>
+          <TabsContent value="settings">
+            <Card>
+              <CardHeader>
+                <CardTitle>Settings</CardTitle>
+                <CardDescription>
+                  Manage your account preferences and options. Customize your
+                  experience to fit your needs.
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="text-sm text-muted-foreground">
+                Configure notifications, security, and themes.
+              </CardContent>
+            </Card>
           </TabsContent>
         </Tabs>
       </Section>
@@ -335,8 +375,8 @@ export default function Home() {
         <div className="flex items-center space-x-4">
           <Skeleton className="h-12 w-12 rounded-full" />
           <div className="space-y-2">
-            <Skeleton className="h-4 w-[250px]" />
-            <Skeleton className="h-4 w-[200px]" />
+            <Skeleton className="h-4 w-62.5" />
+            <Skeleton className="h-4 w-50" />
           </div>
         </div>
       </Section>

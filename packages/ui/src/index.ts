@@ -13,7 +13,7 @@ export {
   AccordionContent,
 } from "./components/accordion";
 
-export { Alert, AlertTitle, AlertDescription } from "./components/alert";
+export { Alert, AlertTitle, AlertDescription, AlertAction } from "./components/alert";
 
 export {
   AlertDialog,
@@ -27,11 +27,19 @@ export {
   AlertDialogDescription,
   AlertDialogAction,
   AlertDialogCancel,
+  AlertDialogMedia,
 } from "./components/alert-dialog";
 
 export { AspectRatio } from "./components/aspect-ratio";
 
-export { Avatar, AvatarImage, AvatarFallback } from "./components/avatar";
+export {
+  Avatar,
+  AvatarImage,
+  AvatarFallback,
+  AvatarGroup,
+  AvatarGroupCount,
+  AvatarBadge,
+} from "./components/avatar";
 
 export { Badge, badgeVariants } from "./components/badge";
 
@@ -54,6 +62,7 @@ export {
   CardHeader,
   CardFooter,
   CardTitle,
+  CardAction,
   CardDescription,
   CardContent,
 } from "./components/card";
@@ -65,6 +74,7 @@ export {
   CarouselItem,
   CarouselPrevious,
   CarouselNext,
+  useCarousel,
 } from "./components/carousel";
 
 export {
@@ -178,6 +188,15 @@ export {
 export { Input } from "./components/input";
 
 export {
+  InputGroup,
+  InputGroupAddon,
+  InputGroupButton,
+  InputGroupText,
+  InputGroupInput,
+  InputGroupTextarea,
+} from "./components/input-group";
+
+export {
   InputOTP,
   InputOTPGroup,
   InputOTPSlot,
@@ -231,6 +250,10 @@ export {
   Popover,
   PopoverTrigger,
   PopoverContent,
+  PopoverAnchor,
+  PopoverHeader,
+  PopoverTitle,
+  PopoverDescription,
 } from "./components/popover";
 
 export { Progress } from "./components/progress";
@@ -292,7 +315,13 @@ export {
   TableCaption,
 } from "./components/table";
 
-export { Tabs, TabsList, TabsTrigger, TabsContent } from "./components/tabs";
+export {
+  Tabs,
+  TabsList,
+  TabsTrigger,
+  TabsContent,
+  tabsListVariants,
+} from "./components/tabs";
 
 export { Textarea } from "./components/textarea";
 
