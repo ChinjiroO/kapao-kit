@@ -1,0 +1,10 @@
+/**
+ * Tailwind CSS v4 — import this file in your app **after** `@import "tailwindcss"`.
+ *
+ * The published npm package ships compiled components under `dist/*.js` (class names live
+ * there as strings). Tailwind does not scan `node_modules` by default, so this file uses
+ * `@source` paths **relative to `dist/globals.css`** to register those sources.
+ *
+ * @see https://tailwindcss.com/docs/detecting-classes-in-source-files
+ */
+@source "./*.js";

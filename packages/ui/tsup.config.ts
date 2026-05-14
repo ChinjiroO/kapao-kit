@@ -1,4 +1,9 @@
+import { copyFileSync } from "node:fs";
+import { dirname, join } from "node:path";
+import { fileURLToPath } from "node:url";
 import { defineConfig } from "tsup";
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig({
   entry: ["src/index.ts"],
@@ -29,4 +34,10 @@ export default defineConfig({
   ],
   treeshake: true,
   splitting: false,
+  onSuccess: async () => {
+    copyFileSync(
+      join(__dirname, "src/globals.css"),
+      join(__dirname, "dist/globals.css"),
+    );
+  },
 });
